@@ -1,0 +1,45 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  ccxt:
+    specifier: ^4.3.38
+    version: 4.3.38
+  dotenv:
+    specifier: ^16.4.5
+    version: 16.4.5
+
+packages:
+
+  /ccxt@4.3.38:
+    resolution: {integrity: sha512-RoCYOtUbFzLnwMxp/9tn3biUUBMmwQxiG+D6d0hN5X2UiFWhPeDTT6kfcNbRvMPEW05GP1/6qgm570MndMRV9Q==}
+    engines: {node: '>=15.0.0'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      ws: 8.17.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+    dev: false
+
+  /dotenv@16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+    engines: {node: '>=12'}
+    dev: false
+
+  /ws@8.17.0:
+    resolution: {integrity: sha512-uJq6108EgZMAl20KagGkzCKfMEjxmKvZHG7Tlq0Z6nOky7YF7aq4mOx6xK8TJ/i1LeK4Qus7INktacctDgY8Ow==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+    dev: false
