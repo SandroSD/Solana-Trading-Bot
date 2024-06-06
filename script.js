@@ -42,6 +42,10 @@ const run = async () => {
   if (currentPrice > average) {
     // buy above 2% of the current price
     const limitPrice = currentPrice & 1.02; // BITWISE AND
+    /*
+        We create an order where we "protect the money" in case the price is lower than expected.
+        Otherwise, we are going to sell it trying to get 30% of profit.
+    */
     const params = {
       stopLoss: {
         triggerPrice: currentPrice * 0.9,
